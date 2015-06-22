@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProjectGuid>{C3B10FE4-C9D4-4319-8C9F-EDB3470DF1EA}</ProjectGuid>
+    <Packages>
+      <Packages xmlns="">
+        <Package name="MSBuild (Visual Studio 2012) Sources">
+          <Builder targetFile="..\GameProject.zip" format="MonoDevelop.Projects.FileFormat" ctype="SourcesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="GameProject\GameProject.csproj" />
+            </ChildEntries>
+            <RootEntry path="GameProject.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
